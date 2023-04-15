@@ -41,8 +41,7 @@ sayari.forEach((s) => {
         words[4] = `<span>${words[4]}</span>`;
 
         words[5] = `<span>${words[5]}</span>`;
-         words[10] = `<span>${words[10]}</span>`;
-
+         
         
         
         // this would return the second word
