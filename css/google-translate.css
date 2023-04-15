@@ -1,0 +1,86 @@
+html {
+    height: auto !important;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла */
+
+body {
+    top: 0 !important;
+    position: static !important;
+}
+
+.skiptranslate {
+    display: none !important;
+}
+
+/* Убираем подсветку ссылок */
+
+.goog-text-highlight {
+    background-color: inherit;
+    box-shadow: none;
+    box-sizing: inherit;
+}
+
+/* language */
+
+.tr-holder {
+  position: fixed;
+  top:100px;
+  right:0px!important;
+  z-index: 9999;
+  display: flex;
+  
+}
+.tr-head {
+  background: #3949ab;
+  color:#fff;
+  padding:23px 10px;
+  writing-mode: vertical-rl;
+  
+}
+
+.tr-head.show {
+  writing-mode: horizontal-tb
+}
+
+.language {
+    
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    background: #ededed;
+    align-items: center;
+    border:1px solid #3949ab;
+    height: 250px;
+    overflow-x: hidden;
+    padding: 0
+}
+.language{
+  border-collapse: collapse
+}
+.language span {
+  display: block;
+  width:100%;
+  text-align: center;
+  padding:10px 20px;
+  border:1px solid #3949ab;
+  border-spacing: 0px
+}
+
+
+.language span:hover {
+  background: #3949ab;
+  color:#fff
+}
+
+
+
+.lang-all {
+  display:none;
+  
+}
+
+.lang-all.show {
+  display:block
+}
+
