@@ -37,13 +37,13 @@ sayari.forEach((s) => {
     for (const phrase of phrases) {
         const words = phrase.innerHTML.split(" ");
 
+        words[2] = `<span>${words[2]}</span>`;
+
+        words[3] = `<span>${words[3]}</span>`;
+
+        words[4] = `<span>${words[4]}</span>`;
+
         words[5] = `<span>${words[5]}</span>`;
-
-        words[6] = `<span>${words[6]}</span>`;
-
-        words[7] = `<span>${words[7]}</span>`;
-
-        words[8] = `<span>${words[8]}</span>`;
 
         
         // this would return the second word
