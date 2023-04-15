@@ -1,7 +1,7 @@
 # sayariHub
 This is simply created with html, css and JavaScript.The blog name is sayarihub, Where sayari quotes can be viewed.
 
-You can view the demo of the site is from the link here <a href="https://sayarihub.netlify.app">Sayarihub Website</a>
+You can view the demo of the site is from the link here <a href="https://sayarihub.netlify.app">![SayariHub](https://img.shields.io/badge/SayariHub%20-Open%20site-lightgrey)</a>
 
 # Code Used
 Commonly used codes are 
