@@ -137,7 +137,7 @@ function capture(x) {
             alertSnap.classList.remove("show");
         }, 5000);
     
-    alertSnap.innerHTML = " Downloading ";;
+    alertSnap.innerHTML = " Wait! Downloading ";;
 
     const captureElement = document.querySelector(".sayari-text");
 
