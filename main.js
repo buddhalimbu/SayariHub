@@ -139,7 +139,7 @@ function capture(x) {
     
     alertSnap.innerHTML = " Wait! Downloading ";;
 
-    const captureElement = document.querySelector(".sayari-text");
+    const captureElement = xparent.querySelector(".sayari-text");
 
     html2canvas(captureElement)
         .then((canvas) => {
