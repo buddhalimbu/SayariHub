@@ -19,3 +19,5 @@ This is coded on mobile on with the app spck editor.
 
 # License
 
+<a href="https://github.com/buddhalimbu/SayariHub/blob/main/LICENSE.MD">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a>
+![Buddha](https://img.shields.io/badge/Buddha-Web%20Dev%20-blue)
