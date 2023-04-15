@@ -25,10 +25,7 @@ const sayari = document.querySelectorAll(".sayari");
 sayari.forEach((s) => {
     const ogHtml = s.innerHTML;
 
-    const newContent =
-        "<div class='sayari-wrapper'><p class='sayari-text'>" +
-        ogHtml +
-        "<br></br><span class='s-author'></span></p><div class='s-share'><span class='fab fa-whatsapp s-wa'></span><span class='fab fa-twitter s-tw'></span><span class='fab fa-telegram s-tl'></span><span class='fab fa-linkedin s-ln'></span><span class='c-stext'><i class='fa fa-clipboard'></i> Copy</span><span class='s-capture'><i class='fa fa-image'></i> Snap</span></div><span class='s-alert'>Quote Copied</span></div>";
+    const newContent = "<div class='sayari-wrapper'><p class='sayari-text'>" + ogHtml + "<br></br><span class='s-author'></span></p><div class='s-share'><span class='fab fa-whatsapp s-wa'></span><span class='fab fa-twitter s-tw'></span><span class='fab fa-telegram s-tl'></span><span class='fab fa-linkedin s-ln'></span><span class='c-stext'><i class='fa fa-clipboard'></i> Copy</span><span class='s-capture'><i class='fa fa-image'></i> Snap</span></div><span class='s-alert'>Quote Copied</span></div>";
 
     s.innerHTML = newContent;
 
@@ -44,7 +41,9 @@ sayari.forEach((s) => {
         words[4] = `<span>${words[4]}</span>`;
 
         words[5] = `<span>${words[5]}</span>`;
+         words[10] = `<span>${words[10]}</span>`;
 
+        
         
         // this would return the second word
 
