@@ -47,10 +47,7 @@ sayari.forEach((s) => {
 
         words[8] = `<span>${words[8]}</span>`;
 
-        words[13] = `<span>${words[13]}</span>`;
-
-        words[12] = `<span>${words[12]}</span>`;
-
+        
         // this would return the second word
 
         phrase.innerHTML = words.join(" ");
