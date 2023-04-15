@@ -25,7 +25,7 @@ const sayari = document.querySelectorAll(".sayari");
 sayari.forEach((s) => {
     const ogHtml = s.innerHTML;
 
-    const newContent = "<div class='sayari-wrapper'><p class='sayari-text'>" + ogHtml + "<br></br><span class='s-author'></span></p><div class='s-share'><span class='fab fa-whatsapp s-wa'></span><span class='fab fa-twitter s-tw'></span><span class='fab fa-telegram s-tl'></span><span class='fab fa-linkedin s-ln'></span><span class='c-stext'><i class='fa fa-clipboard'></i> Copy</span><span class='s-capture'><i class='fa fa-image'></i> Snap</span></div><span class='s-alert'>Quote Copied</span></div>";
+    const newContent = "<div class='sayari-wrapper'><p class='sayari-text'>" + ogHtml + "<br></br><span class='s-author'></span></p><div class='s-share'><span class='fab fa-whatsapp s-wa'></span><span class='fab fa-twitter s-tw'></span><span class='fab fa-telegram s-tl'></span><span class='fab fa-linkedin s-ln'></span><span class='c-stext'><i class='fa fa-clipboard'></i> Copy</span><span class='s-capture'><i class='fa fa-image'></i> Snap</span></div><span class='s-alert'></span></div>";
 
     s.innerHTML = newContent;
 
@@ -101,7 +101,7 @@ elems.forEach((elem) => {
         //alerts
 
         const alertSpan = txtholder.querySelector(".s-alert");
-
+        alertSpan.innerHTML = " Great! Copied";
         alertSpan.classList.add("show");
 
         setTimeout(() => {
@@ -129,9 +129,15 @@ document.querySelectorAll(".s-capture").forEach((click) => {
 });
 
 function capture(x) {
-    x.target.style.backgroundColor = "red";
-
-    x.target.style.color = "#fff";
+    
+    const xparent = this.parentElement.parentElement;
+    const alertSnap = xparent.querySelector(".s-alert");
+    alertSnap.classList.add("show");
+    setTimeout(() => {
+            alertSnap.classList.remove("show");
+        }, 5000);
+    
+    alertSnap.innerHTML = " Downloading ";;
 
     const captureElement = document.querySelector(".sayari-text");
 
