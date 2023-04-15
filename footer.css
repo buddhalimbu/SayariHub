@@ -1,0 +1,348 @@
+/**Footer CSS**/
+
+footer{
+  color: #fff;
+  background-image: linear-gradient(90deg, #3949ab 0%, rgba(87,25,45,1) 100%);
+  position: relative;
+  font-size: 0.8rem;
+  padding-top: 30px
+}
+.def-flex {
+  display: block;
+  
+}
+
+.sayari-footer-wrapper {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 40px;
+  padding:23px 0;
+}
+
+.sayari-footer-head {
+  text-transform: uppercase;
+  position:relative;
+  font-size: 20px;
+  display: flex;
+  align-items: center
+}
+
+.sayari-footer-head:before {
+  content:"";
+  height:14px;
+  width:14px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 100px;
+  margin-right: 4px
+ 
+}
+.sayari-logo {
+  
+}
+.sayari-logo img {
+  width:160px;
+}
+
+.sayari-btn-know {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #00E5FF;
+  color: #00E5FF;
+  text-transform: uppercase;
+  border-radius:10px;
+  margin-top: 20px;
+  display:block;
+  width:120px;
+  text-align: center
+}
+
+.sayari-btn-know:hover{
+  color: #3949ab; 
+  background-color: #fff;
+  transition: linear 0.3s;
+  border: 1px solid #fff
+}
+
+.sayari-info {
+padding:0!important;
+
+}
+.sayari-info-about {
+  
+}
+.sayari-info-about a {
+  text-decoration: none;
+  color:#fff;
+  display: block
+}
+
+.sayari-info-about a.mailto {
+  color:#00E5FF
+}
+.sayari-info-about a span {
+  margin-right: 5px
+}
+
+.sayari-footer-link {
+  
+}
+.sayari-footer-lin-btn {
+  display:flex;
+  flex-direction: column
+}
+.sayari-footer-lin-btn a{
+  color:#fff;
+  text-decoration: none;
+  padding:1px 0;
+}
+.sayari-footer-lin-btn a:hover {
+  color:#00E5FF;
+}
+.subcribe{
+  display: flex;
+  padding: 12px 0 0 0;
+  align-items: center
+}
+.subcribe input[type=mail]{
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  background: transparent;
+  font-size: 0.6rem;
+  margin:0 6px 0 6px;
+  color:#fff;
+  text-transform: uppercase;
+  transition: 0.4s ease-in-out
+}
+.subcribe ::placeholder {
+  opacity: 0.6;
+  color:#fff;
+}
+.subcribe input[type=mail]:focus {
+  width:100%;
+  outline: none;
+  transition:0.4s ease-in-out
+}
+.joinus {
+  width:40px;
+  height:22px;
+  line-height: 22px;
+  background:rgba(255,255,255,0.1);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 10px;
+  color:#fff;
+}
+.sayari-footer-icons {
+  display: flex;
+  gap:10px;
+  margin-top: 20px
+}
+
+.sayari-sucess-msg {
+  padding:10px 0;
+  font-size: 9px;
+  color:#fff;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.3);
+  display: block;
+  margin-top: 20px;
+  height: 22px;
+  line-height: 22px;
+  border-left: 6px solid #ff3733;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  width:230px;
+  display: none
+}
+
+.sayari-footer-icons a {
+  width:40px;
+  height: 40px;
+ border-radius: 50%;
+ display:block;
+ background: transparent;
+ border:1px solid #fff;
+ color:#fff;
+ text-decoration: none;
+ display: flex;
+ justify-content: center;
+ align-items: center
+}
+.sayari-footer-icons a:hover {
+  color:#00E5FF;
+  border:1px solid #00E5FF;
+}
+.hr {
+  height: 1px;
+  background: rgba(255,255,255,0.3)
+}
+.sayari-copyright {
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px
+}
+.sayari-copyright p.infotag {
+  opacity: .7;
+  font-size: 9px
+}
+
+
+
+@media (max-width:960px) {
+  footer{
+    width: 100%;
+    
+  }
+  
+  .sayari-footer-wrapper{
+  margin: 5px 0;
+ display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+}
+
+
+
+
+
+@media (max-width:660px){
+  .sayari-footer-wrapper{
+    display:block
+
+  }
+  .def-flex {
+    padding:30px 0;
+  }
+}
+
+
+
+
+
+
+.gt-card {
+  display: none;
+  transform: scale(0.8);
+  position: absolute ;
+  z-index :9999;
+  right:30px;
+  top:70px;
+}
+.gt-card.show {
+  display: block;
+  transition:0.4s ease-in-out;
+  transform:scale(1)
+}
+.github-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  max-width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.github-card:hover {
+  transform: translateY(-5px);
+}
+
+.github-card-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.github-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.github-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.github-bio {
+  font-size: 16px;
+  color: #666;
+  margin: 8px 0 0;
+}
+
+.github-card-footer {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.github-stats {
+  display: flex;
+}
+
+.github-stat {
+  margin-right: 16px;
+}
+
+.github-stat:last-child {
+  margin-right: 0;
+}
+
+.github-stat-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  display: block;
+  text-transform: capitalize
+}
+
+.github-stat-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.github-profile-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: #f7f7f7;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase
+}
+.github-profile-link span {
+  margin-left: 6px
+}
+.github-profile-link:hover {
+  background-color: #e7e7e7;
+}
+
+.ov {
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background:rgba(0,0,0,.7);
+  z-index: 1000;
+}
