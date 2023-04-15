@@ -241,7 +241,7 @@ header:after {
     margin: 10px 0;
 }
 
-.sayari {display:none}
+.sayari {}
 
 .sayari-wrapper {
     position: relative;
