@@ -12,6 +12,9 @@
 
 html {
     margin: 0;
+text-rendering:optimizeLegibility;
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
 }
 
 body {
@@ -237,6 +240,8 @@ header:after {
 .bars span:nth-child(2) {
     margin: 10px 0;
 }
+
+.sayari {display:none}
 
 .sayari-wrapper {
     position: relative;
