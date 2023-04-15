@@ -337,6 +337,10 @@ display: none;
     align-items: center;
 }
 
+.c-stext:hover,.s-capture:hover {
+  background: #00E676;
+  color: #fff
+}
 .s-capture {
     background: #ff5733;
 
