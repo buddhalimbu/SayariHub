@@ -444,7 +444,7 @@ display: none;
 .s-alert.show {
     transition: 0.3s ease-in-out;
 
-    bottom: 50px;
+    bottom: 60px;
 
     visibility: visible;
 
