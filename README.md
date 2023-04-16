@@ -21,3 +21,17 @@ This is coded on mobile on with the app spck editor.
 
 <a href="https://github.com/buddhalimbu/SayariHub/blob/main/LICENSE.MD">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a>
 ![Buddha](https://img.shields.io/badge/Buddha-Web%20Dev%20-blue)
+
+For translate using google translate.js 
+
+/*!***************************************************
+ * google-translate.js v1.0.4
+ * https://Get-Web.Site/
+ * author: Vitalii P.
+ *****************************************************/
+
+
+Cookie https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
+
+Htmltocpnvas
+https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.0/html2canvas.min.js
