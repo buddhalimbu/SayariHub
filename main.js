@@ -133,7 +133,7 @@ function capture(x) {
     const xparent = this.parentElement.parentElement;
     const alertSnap = xparent.querySelector(".s-alert");
     alertSnap.classList.add("show");
-    this.style.background:#dc00da;
+    this.style.background="#dc00da";
     setTimeout(() => {
             alertSnap.classList.remove("show");
         }, 5000);
