@@ -162,7 +162,7 @@ caps.forEach((cap) => {
 
             canvas.remove();
         });
-}
+
  })});
 
 //loadmore
