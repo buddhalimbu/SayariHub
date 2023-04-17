@@ -133,11 +133,12 @@ function capture(x) {
     const xparent = this.parentElement.parentElement;
     const alertSnap = xparent.querySelector(".s-alert");
     alertSnap.classList.add("show");
+    this.style.background:#dc00da;
     setTimeout(() => {
             alertSnap.classList.remove("show");
         }, 5000);
     
-    alertSnap.innerHTML = " Wait! Downloading ";;
+    alertSnap.innerHTML = " Wait! Downloading ";
 
     const captureElement = xparent.querySelector(".sayari-text");
 
