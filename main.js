@@ -124,14 +124,13 @@ var year = date.getFullYear();
 
 document.querySelector(".year").innerText = year;
 
-var caps = document.querySelectorAll(".s-capture");
-caps.forEach((cap) => {
+document.querySelectorAll(".s-capture").forEach((cap) => {
     cap.addEventListener("click", (capture)=>{
 
-    const xparent = capture.target.parentElement.parentElement;
+    const xparent = cap.target.parentElement.parentElement;
     const alertSnap = xparent.querySelector(".s-alert");
     alertSnap.classList.add("show");
-    capture.style.background="#d700fa";
+    cap.style.background="#d700fa";
     setTimeout(() => {
             alertSnap.classList.remove("show");
         }, 5000);
@@ -162,8 +161,8 @@ caps.forEach((cap) => {
 
             canvas.remove();
         });
-
- })});
+});
+ });
 
 //loadmore
 
