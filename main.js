@@ -131,10 +131,14 @@ document.querySelectorAll(".s-capture").forEach((click) => {
 });
 
 function capture(x) {
-    x.target.style.backgroundColor = "red";
-
-    x.target.style.color = "#fff";
-
+    const xparent = this.parentElement.parentElement;
+    const alertSnap = xparent.querySelector(".s-alert");
+    alertSnap.classList.add("show");
+    setTimeout(() => {
+            alertSnap.classList.remove("show");
+        }, 3000);
+    
+    alertSnap.innerHTML = " Wait ! Downloading ";
     const captureElement = document.querySelector(".sayari-text");
 
     html2canvas(captureElement)
