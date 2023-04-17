@@ -243,7 +243,13 @@ header:after {
 .bars span:nth-child(2) {
     margin: 10px 0;
 }
+.sayari {
+display: none;
 
+    opacity: 0.7;
+
+    transform: scale(0.58);
+}
 .sayari-wrapper {
     position: relative;
 
@@ -265,14 +271,9 @@ header:after {
 
     border-bottom: solid 1px;
 
-    display: none;
+    }
 
-    opacity: 0.7;
-
-    transform: scale(0.58);
-}
-
-.sayari-wrapper.show {
+.sayari.show {
     display: block;
 
     opacity: 1;
