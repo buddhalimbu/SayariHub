@@ -163,7 +163,7 @@ function capture(x) {
 
 //loadmore
 
-const hiddenItems = [...document.querySelectorAll(".sayari-wrapper")];
+const hiddenItems = [...document.querySelectorAll(".sayari")];
 
 const loadmore = document.querySelector(".showmore");
 
