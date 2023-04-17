@@ -124,21 +124,16 @@ var year = date.getFullYear();
 
 document.querySelector(".year").innerText = year;
 
-document.querySelectorAll(".s-capture").forEach((cap) => {
-    cap.addEventListener("click", (capture)=>{
+document.querySelectorAll(".s-capture").forEach((click) => {
+    click.addEventListener("click", capture);
+});
 
-    const xparent = cap.target.parentElement.parentElement;
-    const alertSnap = xparent.querySelector(".s-alert");
-    alertSnap.classList.add("show");
-    cap.style.background="#d700fa";
-    setTimeout(() => {
-            alertSnap.classList.remove("show");
-        }, 5000);
-    
-    alertSnap.innerHTML = " Wait! Downloading ";
+function capture(x) {
+    x.target.style.backgroundColor = "red";
 
-    var captureElement = xparent.querySelector(".sayari-text");
+    x.target.style.color = "#fff";
 
+    const captureElement = document.querySelector(".sayari-text");
     html2canvas(captureElement)
         .then((canvas) => {
             canvas.style.display = "none";
@@ -161,8 +156,7 @@ document.querySelectorAll(".s-capture").forEach((cap) => {
 
             canvas.remove();
         });
-});
- });
+}
 
 //loadmore
 
