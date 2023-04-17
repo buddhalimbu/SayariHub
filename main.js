@@ -128,12 +128,12 @@ document.querySelectorAll(".s-capture").forEach((click) => {
     click.addEventListener("click", capture);
 });
 
-function capture(x) {
-    x.target.style.backgroundColor = "red";
+function capture() {
+    this.style.backgroundColor = "red";
 
-    x.target.style.color = "#fff";
-
-    const captureElement = document.querySelector(".sayari-text");
+    this.style.color = "#fff";
+const xpar = this.parentElement.parentElement;
+    const captureElement = xpar.querySelector(".sayari-text");
     html2canvas(captureElement)
         .then((canvas) => {
             canvas.style.display = "none";
