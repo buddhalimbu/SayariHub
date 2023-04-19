@@ -405,6 +405,8 @@ display: none;
 .c-stext i {
     padding-right: 3px !important;
 }
+.s-capture:hover,.c-stext:hover {
+background:#1DE9B6}
 
 .s-alert {
     position: absolute;
@@ -440,7 +442,7 @@ display: none;
 .s-alert.show {
     transition: 0.3s ease-in-out;
 
-    bottom: 50px;
+    bottom: 60px;
 
     visibility: visible;
 
